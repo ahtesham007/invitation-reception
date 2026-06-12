@@ -9,7 +9,7 @@
 .env-wrap:hover{transform:scale(1.04) translateY(-5px);}
 .env-hint{margin-top:26px;font-size:20px;color:#b8924a;letter-spacing:0.22em;text-transform:uppercase;font-weight:300;animation:pu 2s ease-in-out infinite;}
 @keyframes pu{0%,100%{opacity:0.5}50%{opacity:1}}
-#card{display:none;width:100%;max-width:800px;top:80px;flex-direction:column;align-items:center;position:relative;z-index:3;}
+#card{display:none;width:100%;max-width:800px;top:30px;flex-direction:column;align-items:center;position:relative;z-index:3;}
 #card.open{display:flex;animation:uf 0.9s ease-out forwards;}
 @keyframes uf{from{opacity:0;transform:translateY(-28px)}to{opacity:1;transform:translateY(0)}}
 
@@ -84,9 +84,6 @@
 <div class="fl-layer" id="fl-bg"></div>
 
 <div id="env-scene" onclick="openCard()">
-  <audio id="bg-music" preload="auto">
-    <source src="https://assets.mixkit.co/active_storage/sfx/2741/2741-preview.mp3" type="audio/mpeg">
-  </audio>
   <div class="env-wrap">
     <svg viewBox="0 0 300 210" xmlns="http://www.w3.org/2000/svg">
       <rect x="4" y="28" width="292" height="178" rx="3" fill="#fdfaf4" stroke="#d4b86a" stroke-width="1"/>
@@ -122,7 +119,7 @@
     <div class="inv-block">
       <div class="inv-arabic">يَا رَبِّ اجْعَلْ هَذَا الزَّوَاجَ مُبَارَكًا وَمَيْمُونًا</div>
       <div class="inv-arabic">اللَّهُمَّ أَلِّفْ بَيْنَهُمَا كَمَا أَلَّفْتَ بَيْنَ آدَمَ وَحَوَّاءَ</div>
-      <!-- <div class="inv-arabic">اللَّهُمَّ بَارِكْ لَهُمَا وَبَارِكْ عَلَيْهِمَا وَاجْمَعْ بَيْنَهُمَا فِي الْخَيْرِ</div> -->
+      <div class="inv-arabic">اللَّهُمَّ بَارِكْ لَهُمَا وَبَارِكْ عَلَيْهِمَا وَاجْمَعْ بَيْنَهُمَا فِي الْخَيْرِ</div>
       <!-- <div class="inv-trans">O Lord, make this marriage blessed and auspicious</div> -->
     </div>
 
@@ -171,8 +168,24 @@
 
   <div class="div-strip">✦ &nbsp; ✦ &nbsp; ✦</div>
 
+  <div class="panel">
+    <p class="ev-label">The First Ceremony</p>
+    <h2 class="ev-title">The Nikah</h2>
+    <p class="ev-date">Thursday, 1st October 2026</p>
+    <div class="gold-bar"></div>
+    <div style="margin-top:16px;">
+      <div class="ev-row"><i class="ti ti-map-pin ev-ic" aria-hidden="true"></i><span>Baradari, Lucknow</span></div>
+      <div class="ev-row"><i class="ti ti-clock ev-ic" aria-hidden="true"></i><span>7:00 PM onwards</span></div>
+    </div>
+    <div class="gold-bar" style="margin-top:16px;"></div>
+    <p class="ev-note">The ceremony will be followed by a traditional<br>Manqabat recitation &amp; Dinner</p>
+  </div>
+
+  <div class="div-strip">✦ &nbsp; ✦ &nbsp; ✦</div>
+
   <div class="panel panel-last">
-    <h2 class="ev-title">Wedding Reception</h2>
+    <p class="ev-label">The Grand Celebration</p>
+    <h2 class="ev-title">The Wedding Reception</h2>
     <p class="ev-date">Friday, 2nd October 2026</p>
     <div class="gold-bar"></div>
     <div style="margin-top:16px;">
@@ -197,17 +210,19 @@
         <span class="cta-lbl">Save Dates</span>
         <span class="cta-sub">Add to calendar</span>
       </div>
-      <a class="cta-btn" href="https://wa.me/?text=Assalamu%20Alaikum%2C%20I%20confirm%20my%20attendance%20for%20the%20Reception." target="_blank">
+      <a class="cta-btn" href="https://wa.me/?text=Assalamu%20Alaikum%2C%20I%20confirm%20my%20attendance%20for%20the%20Nikah%20and%20Reception." target="_blank">
         <i class="ti ti-brand-whatsapp cta-ic" aria-hidden="true"></i>
         <span class="cta-lbl">RSVP</span>
         <span class="cta-sub">WhatsApp</span>
       </a>
     </div>
     <div id="loc-pop" class="sub-pop">
-      <a class="sub-item" href="https://www.google.com/maps/place/SRT+Grand+Palace/@26.8521406,80.8947674,14.58z/data=!4m6!3m5!1s0x399bff8f9c6b2baf:0xec93fe7a781b8051!8m2!3d26.8587381!4d80.8809816!16s%2Fg%2F11mndbdqj8?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank"><span class="sub-dot"></span>SRT Grand Palace, Lucknow</a>
+      <a class="sub-item" href="https://www.google.com/maps/place/Baradari,+Sufaid+Baradari,+Kaiser+Bagh,+Lucknow,+Uttar+Pradesh+226018/@26.8523283,80.9319628,17z/data=!4m6!3m5!1s0x399bfda4ab6a3cff:0x2f4d36cf0031c43a!8m2!3d26.8523283!4d80.9319628!16s%2Fg%2F1ym_k4btw?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank"><span class="sub-dot"></span>Nikah — Baradari (1 Oct)</a>
+      <a class="sub-item" href="https://www.google.com/maps/place/SRT+Grand+Palace/@26.8521406,80.8947674,14.58z/data=!4m6!3m5!1s0x399bff8f9c6b2baf:0xec93fe7a781b8051!8m2!3d26.8587381!4d80.8809816!16s%2Fg%2F11mndbdqj8?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank"><span class="sub-dot"></span>Reception — SRT Grand Palace (2 Oct)</a>
     </div>
     <div id="cal-pop" class="sub-pop">
-      <a class="sub-item" href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20260802T200000%0ADTEND:20260802T230000%0ASUMMARY:Wedding%20Reception%20-%20Ahtesham%20%26%20Abiha%0ALOCATION:SRT%20Grand%20Palace%0AEND:VEVENT%0AEND:VCALENDAR" download="reception.ics"><span class="sub-dot"></span>Friday 2nd October, 8:00 PM</a>
+      <a class="sub-item" href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20260801T180000%0ADTEND:20260801T230000%0ASUMMARY:Nikah%20Ceremony%20-%20Ahtesham%20%26%20Abiha%0ALOCATION:Baradari%0AEND:VEVENT%0AEND:VCALENDAR" download="nikah.ics"><span class="sub-dot"></span>Nikah — Thursday 1st October, 7:00 PM</a>
+      <a class="sub-item" href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20260803T200000%0ADTEND:20260804T000000%0ASUMMARY:Wedding%20Reception%20-%20Ahtesham%20%26%20Abiha%0ALOCATION:SRT%20Grand%20Palace%0AEND:VEVENT%0AEND:VCALENDAR" download="reception.ics"><span class="sub-dot"></span>Reception — Friday 2nd October, 8:00 PM</a>
     </div>
   </div>
 
@@ -346,8 +361,6 @@ function openCard() {
   const card = document.getElementById('card');
   card.classList.add('open');
   buildFloral();
-  // const audio = document.getElementById('bg-music');
-  // audio.play().catch(err => console.log('Audio play failed:', err));
 }
 
 function togglePop(id) {
